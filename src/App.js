@@ -7,24 +7,41 @@ import MusicCard from "./componets/MusicCard";
 import NavBar from "./componets/NavBar";
 
 const App = () => {
-  const httpRequest = new HttpRequest();
-  const musicRequest = new MusicRequest();
-  // const [data, setData] = useState([]);
+  const [data, setData] = useState([]);
+  const testURL = "https://itunes.apple.com/search?term=beyonce";
+  const createRequest = async (url) => {
+    await fetch(url)
+      .then((response) => response.json())
+      .then((data) => setData(data.results))
+      .catch((error) => console.log(`Error: ${error}`));
+  };
 
   useEffect(() => {
-    musicRequest.sendRequest("beyonce", "song", "music", "genreIndex", 10);
+    createRequest(testURL);
   }, []);
-
-  //console.log(httpRequest.updateSuccess());
 
   return (
     <div className="App">
-      <div classname="navbar">
+      <div className="navbar-cus">
         <NavBar />
       </div>
       <div className="container-cus">
-        <MusicCard />
+        {data.length > 0 ? (
+          <div className="sub-container">
+            {data.map((item) => (
+              <MusicCard info={item} />
+            ))}
+            {console.log("data from App.js", data)}
+          </div>
+        ) : (
+          console.log("loading data...")
+        )}
       </div>
+      {/* <div>
+        {
+
+        }
+      </div> */}
     </div>
   );
 };
