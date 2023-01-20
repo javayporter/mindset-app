@@ -4,9 +4,13 @@ class HttpRequest extends Component {
   constructor(url) {
     super();
     this.url = url;
+    this.state = {
+      data: "",
+    };
   }
   createRequest(url) {
     const httpRequest = new XMLHttpRequest(url);
+    const data = httpRequest.responseText;
     httpRequest.addEventListener("readystatechange", (url) => {
       httpRequest.readyState === 4
         ? console.log(httpRequest.responseText)
@@ -14,7 +18,21 @@ class HttpRequest extends Component {
     });
     httpRequest.open("GET", url);
     httpRequest.send();
-    console.log(httpRequest.responseText);
+    return data;
+    // const setData = () => {
+    //   this.state = {
+    //     data: data,
+    //   };
+    // };
+
+    // setData();
+    // console.log("this state should be data", setData());
+  }
+  test() {
+    this.setState({
+      data: 9,
+    });
+    console.log(this.state);
   }
 }
 
