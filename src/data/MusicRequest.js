@@ -7,16 +7,12 @@ class MusicRequest {
     this.media = media;
     this.attribute = attribute;
     this.limit = limit;
-    // this.state = {
-    //   musicData: "",
-    // };
   }
   sendRequest(term, entity, media, attribute, limit) {
     const MUSIC_API_URL = "https://itunes.apple.com/search?";
     const URL = `${MUSIC_API_URL}term=${term}&media=${media}&entity=${entity}&attribute=${attribute}&limit=${limit}`;
     const musicRequest = new HttpRequest();
     musicRequest.createRequest(URL);
-    //musicRequest.test(URL);
   }
 }
 export default MusicRequest;
