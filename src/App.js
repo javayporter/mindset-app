@@ -1,8 +1,6 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import MusicRequest from "./data/MusicRequest";
 import { useEffect, useState } from "react";
-import HttpRequest from "./data/HttpRequest";
 import MusicCard from "./componets/MusicCard";
 import NavBar from "./componets/NavBar";
 
@@ -37,11 +35,6 @@ const App = () => {
           console.log("loading data...")
         )}
       </div>
-      {/* <div>
-        {
-
-        }
-      </div> */}
     </div>
   );
 };
