@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import MusicCard from "../componets/MusicCard";
+import MusicCard from "../components/MusicCard";
 
 export const Music = () => {
   const [data, setData] = useState([]);

@@ -10,7 +10,10 @@ const MusicCard = ({ info }) => {
   return (
     <div className="movie" key="">
       <Card style={{ width: "18rem" }}>
-        <Card.Img variant="top" src={imgSrc} />
+        <Card.Img
+          variant="top"
+          src={musicData.artworkUrl100 ? musicData.artworkUrl100 : imgSrc}
+        />
         <Card.Body>
           {/* {console.log("data from MusicCard", musicData)} */}
           <Card.Title>{musicData.trackCensoredName}</Card.Title>

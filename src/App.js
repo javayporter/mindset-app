@@ -1,7 +1,7 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Music } from "./pages/Music";
-import Layout from "./componets/Layout";
+import Layout from "./components/Layout";
 import { Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { DiaryEntries } from "./pages/DiaryEntries";

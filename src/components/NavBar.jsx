@@ -4,7 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 
 const NavBar = () => {
   return (
-    <Navbar bg="dark" variant="dark">
+    <Navbar fixed="top" bg="dark" variant="dark">
       <Container>
         <Navbar.Brand href="/">Mindset App</Navbar.Brand>
         <Nav className="me-auto">
