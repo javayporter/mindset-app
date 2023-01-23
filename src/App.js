@@ -1,41 +1,20 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useEffect, useState } from "react";
-import MusicCard from "./componets/MusicCard";
-import NavBar from "./componets/NavBar";
+import { Music } from "./pages/Music";
+import Layout from "./componets/Layout";
+import { Route, Routes } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { DiaryEntries } from "./pages/DiaryEntries";
 
 const App = () => {
-  const [data, setData] = useState([]);
-  const testURL = "https://itunes.apple.com/search?term=beyonce";
-  const createRequest = async (url) => {
-    await fetch(url)
-      .then((response) => response.json())
-      .then((data) => setData(data.results))
-      .catch((error) => console.log(`Error: ${error}`));
-  };
-
-  useEffect(() => {
-    createRequest(testURL);
-  }, []);
-
   return (
-    <div className="App">
-      <div className="navbar-cus">
-        <NavBar />
-      </div>
-      <div className="container-cus">
-        {data.length > 0 ? (
-          <div className="sub-container">
-            {data.map((item) => (
-              <MusicCard info={item} />
-            ))}
-            {console.log("data from App.js", data)}
-          </div>
-        ) : (
-          console.log("loading data...")
-        )}
-      </div>
-    </div>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="/music" element={<Music />} />
+        <Route path="/diaries" element={<DiaryEntries />} />
+      </Route>
+    </Routes>
   );
 };
 

@@ -6,11 +6,10 @@ const NavBar = () => {
   return (
     <Navbar bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="#home">Mindset App</Navbar.Brand>
+        <Navbar.Brand href="/">Mindset App</Navbar.Brand>
         <Nav className="me-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#about">About</Nav.Link>
-          <Nav.Link href="#contact">Contact</Nav.Link>
+          <Nav.Link href="/diaries">Diary</Nav.Link>
+          <Nav.Link href="/music">Music</Nav.Link>
         </Nav>
       </Container>
     </Navbar>
