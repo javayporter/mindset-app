@@ -20,7 +20,7 @@ export const Music = () => {
         {data.length > 0 ? (
           <div className="sub-container">
             {data.map((item) => (
-              <MusicCard info={item} />
+              <MusicCard info={item} key={item.trackId} />
             ))}
             {console.log("data from App.js", data)}
           </div>

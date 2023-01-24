@@ -1,6 +1,8 @@
 import Button from "react-bootstrap/Button";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { ModalCus } from "../components/Modal";
+import { Forms } from "../components/Forms";
 
 export const DiaryEntries = () => {
   const [entries, setEntries] = useState([]);
@@ -22,7 +24,11 @@ export const DiaryEntries = () => {
 
   return (
     <div className="diary-entries" style={{ padding: "2rem" }}>
-      <Button href="/add">Add Entry</Button>
+      <ModalCus
+        buttonText="Add Entry"
+        modalHeader="Add New Entry"
+        modalBody={<Forms />}
+      />
     </div>
   );
 };

@@ -1,7 +1,9 @@
 .app {
   padding-top: 3rem;
-  color: red;
+  color: black;
   text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .container-cus {
   margin-left: 5%;

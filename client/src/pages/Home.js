@@ -1,5 +1,4 @@
 import React from "react";
-import { Jumbotron } from "../components/Jumbotron";
 import { TextArea } from "../components/TextArea";
 
 export const Home = () => {
@@ -15,7 +14,6 @@ export const Home = () => {
   };
   return (
     <div>
-      <Jumbotron />
       <TextArea text={textContent} />
     </div>
   );

@@ -1,4 +1,4 @@
-import React from "react";
+import "../stylesheets/TextArea.css";
 
 export const TextArea = ({ text }) => {
   return (

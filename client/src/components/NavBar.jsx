@@ -5,7 +5,7 @@ import "../stylesheets/NavBar.css";
 
 const NavBar = () => {
   return (
-    <Navbar className="navbar-cus" fixed="top" bg="dark" variant="dark">
+    <Navbar className="navbar-cus" fixed="top" bg="light" variant="light">
       <Container>
         <Navbar.Brand href="/">Mindset App</Navbar.Brand>
         <Nav className="me-auto">
