@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import MusicCard from "../components/MusicCard";
+import QuoteComp from "../components/QuoteComp";
 
 export const Music = () => {
   const [data, setData] = useState([]);
@@ -16,6 +17,7 @@ export const Music = () => {
   }, []);
   return (
     <div>
+      <QuoteComp />
       <div className="container-cus">
         {data.length > 0 ? (
           <div className="sub-container">
