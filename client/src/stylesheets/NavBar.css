@@ -23,10 +23,10 @@
 @media screen and (max-width: 768px) {
   .hamburger {
     display: block;
-    cursor: pointer;
   }
   .nav-svgs {
     display: block;
+    cursor: pointer;
   }
   .nav-links {
     display: none;
