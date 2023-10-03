@@ -15,27 +15,49 @@ img {
 }
 .left {
   flex: 1;
-  border: 3px dotted purple;
+  padding: 10% 5% 5% 15%;
+  /* border: 3px dotted purple; */
 }
 .right {
   flex: 1;
-  border: 3px dotted blue;
+  padding-right: 10%;
+  padding-top: 5%;
+  /* border: 3px dotted blue; */
 }
-
-/* #jumbo-comp {
-  margin-right: -12.5%;
-  margin-left: -12.5%;
-  background-color: #8cc3cb;
-} */
+.app-description {
+  max-width: 80%;
+  margin: 7% 0 7% 0;
+}
+.buttons {
+  display: flex;
+}
+.subscribe-btn {
+  margin-left: 2%;
+  background-color: rgb(127, 255, 187);
+  color: black;
+}
 @media screen and (max-width: 768px) {
   .hero {
     display: block;
+    text-align: center;
+  }
+  .left {
+    padding: 0;
+  }
+  .right {
+    padding-right: 0;
+    padding-top: 0;
   }
   img {
     width: 200px;
     height: auto;
+    margin: 0 auto; /* centers image */
   }
-  button {
+  .buttons {
     display: none;
+  }
+  .app-description {
+    max-width: 100%;
+    /* margin: 0 0 0 0; */
   }
 }

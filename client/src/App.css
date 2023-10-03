@@ -11,3 +11,7 @@
 .app-outlet {
   /*margin-top: 10%; need to put the height of the navbar */
 }
+@media screen and (max-width: 768px) {
+  .app-outlet {
+  }
+}
