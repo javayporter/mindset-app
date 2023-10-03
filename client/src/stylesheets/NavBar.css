@@ -1,3 +1,27 @@
-.navbar-cus {
-  margin-bottom: 15%;
+.hamburger {
+  display: none;
+}
+.close-svg {
+  display: none;
+}
+
+.no-display {
+  display: none;
+}
+.display {
+  display: block;
+}
+
+.mobile {
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .nav-links {
+    display: none;
+  }
 }

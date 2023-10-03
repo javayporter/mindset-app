@@ -1,10 +1,14 @@
 img {
-  width: 50%;
+  display: block;
+  max-width: 50%;
+  width: 400px;
   height: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
-#jumbo-comp {
+/* #jumbo-comp {
   margin-right: -12.5%;
   margin-left: -12.5%;
   background-color: #8cc3cb;
-}
+} */

@@ -1,13 +1,11 @@
 import NavBar from "./NavBar";
 import { Outlet } from "react-router-dom";
-import { Jumbotron } from "./Jumbotron.jsx";
 
 const Layout = () => {
   return (
-    <div>
+    <div className="app">
       <NavBar />
-
-      <div className="app">
+      <div className="app-outlet">
         <Outlet />
       </div>
     </div>

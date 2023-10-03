@@ -6,7 +6,7 @@ import "../stylesheets/Jumbotron.css";
 export const Jumbotron = () => {
   return (
     <div className="jumbotron-cus" id="jumbo-comp">
-      <img src={mindImage} alt="mind flowers" />
+      <img src={mindImage} width="100px" height="400px" alt="mind flowers" />
     </div>
   );
 };
