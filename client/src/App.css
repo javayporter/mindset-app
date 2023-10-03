@@ -8,3 +8,6 @@
   font-size: calc(10px + 2vmin);
   color: white;
 } */
+.app-outlet {
+  /*margin-top: 10%; need to put the height of the navbar */
+}

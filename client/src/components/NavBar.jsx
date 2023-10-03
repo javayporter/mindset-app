@@ -7,6 +7,12 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 
 const NavBar = () => {
+  const returnHeight = () => {
+    const navBar = document.querySelector(".navbar");
+    const navHeight = navBar.offsetHeight;
+    console.log(navHeight);
+    console.log("javay");
+  };
   const handleClick = () => {
     // define elements
     const appTitle = document.querySelector("#title");

@@ -15,7 +15,7 @@ export const Home = () => {
   };
   return (
     <div>
-      <div className="jumbotron-cus">
+      <div className="">
         <Jumbotron />
       </div>
       <TextArea text={textContent} />
