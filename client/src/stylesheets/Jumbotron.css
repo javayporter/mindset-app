@@ -6,6 +6,13 @@ img {
   overflow-x: hidden;
   overflow-y: hidden;
 }
+/* h1 {
+  font-size: 2rem;
+} */
+.special-heading {
+  margin-top: 50%;
+  color: #301f58;
+}
 .hero {
   display: flex;
   background-color: #8cc3cb;
@@ -36,6 +43,8 @@ img {
   background-color: rgb(127, 255, 187);
   color: black;
 }
+
+/* Media Queries */
 @media screen and (max-width: 768px) {
   .hero {
     display: block;
@@ -58,6 +67,6 @@ img {
   }
   .app-description {
     max-width: 100%;
-    /* margin: 0 0 0 0; */
+    margin: 3% 0 3% 0;
   }
 }
