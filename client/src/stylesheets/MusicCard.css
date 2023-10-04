@@ -1,1 +1,11 @@
-
+.music-container {
+  display: flex;
+  background-color: blue;
+}
+.itunes-data {
+  display: flex;
+  background-color: orange;
+  flex-wrap: wrap;
+  margin-left: 5%;
+  margin-right: 5%;
+}

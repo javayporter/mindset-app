@@ -1,5 +1,6 @@
 import { useState } from "react";
 import MusicCard from "../components/MusicCard";
+import "../stylesheets/MusicCard.css";
 
 export const Music = () => {
   const [data, setData] = useState([]);
@@ -15,15 +16,23 @@ export const Music = () => {
     //return resultData;
   };
 
+  // used for dev env only
+  const returnHeight = () => {
+    const navBar = document.querySelector(".itunes-data");
+    const navHeight = navBar.offsetHeight;
+    console.log(`${navHeight}px`);
+  };
+
   getItunesData(buildUrl("beyonce"));
 
   return (
     <div>
-      <div className="">
+      <button onClick={() => returnHeight()}>get height</button>
+      <div className="music-container">
         {data.length > 0 ? (
-          <div className="">
+          <div className="itunes-data">
             {data.map((item) => (
-              <MusicCard info={item} key={item.trackId} />
+              <MusicCard className="testing" info={item} key={item.trackId} />
             ))}
           </div>
         ) : (
