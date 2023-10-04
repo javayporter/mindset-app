@@ -1,30 +1,30 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import MusicCard from "../components/MusicCard";
-import QuoteComp from "../components/QuoteComp";
 
 export const Music = () => {
   const [data, setData] = useState([]);
-  const testURL = "https://itunes.apple.com/search?term=beyonce";
-  const createRequest = async (url) => {
-    await fetch(url)
-      .then((response) => response.json())
-      .then((data) => setData(data.results))
-      .catch((error) => console.log(`Error: ${error}`));
+  const buildUrl = (searchTerm) => {
+    const url = `https://itunes.apple.com/search?term=${searchTerm}`;
+    return url;
+  };
+  const getItunesData = async (url) => {
+    const data = await fetch(url);
+    const jsonData = await data.json();
+    const resultData = jsonData["results"];
+    setData(resultData);
+    //return resultData;
   };
 
-  useEffect(() => {
-    createRequest(testURL);
-  }, []);
+  getItunesData(buildUrl("beyonce"));
+
   return (
     <div>
-      <QuoteComp />
-      <div className="container-cus">
+      <div className="">
         {data.length > 0 ? (
-          <div className="sub-container">
+          <div className="">
             {data.map((item) => (
               <MusicCard info={item} key={item.trackId} />
             ))}
-            {console.log("data from App.js", data)}
           </div>
         ) : (
           console.log("loading data...")
