@@ -1,11 +1,11 @@
 import React from "react";
-import { Jumbotron } from "../components/Jumbotron";
+import { HeroSection } from "../components/HeroSection";
 
 export const Home = () => {
   return (
     <div>
       <div className="">
-        <Jumbotron />
+        <HeroSection />
       </div>
     </div>
   );

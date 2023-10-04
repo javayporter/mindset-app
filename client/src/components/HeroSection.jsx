@@ -3,11 +3,10 @@ import { Button } from "react-bootstrap";
 
 import mindImage from "../images/purple_mind_big.jpeg";
 
-import "../stylesheets/Jumbotron.css";
-import "../stylesheets/Jumbotron.css";
+import "../stylesheets/HeroSection.css";
 
 //Using this as Hero Section will rename files
-export const Jumbotron = () => {
+export const HeroSection = () => {
   const heading1 = "Welcome to the";
   const heading2 = "Mindset App";
   const description =
