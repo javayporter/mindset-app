@@ -1,5 +1,6 @@
 import NavBar from "./NavBar";
 import { Outlet } from "react-router-dom";
+import "../App.css";
 
 const Layout = () => {
   // need to add logic for react to wait until page is loaded to run function. if the nav height is updated, the margin will update dynamically to keep the page in place
@@ -23,6 +24,9 @@ const Layout = () => {
         }}
       >
         <Outlet />
+      </div>
+      <div className="my-footer">
+        <footer>&copy;2023. All Rights Reserved.</footer>
       </div>
     </div>
   );

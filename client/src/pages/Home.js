@@ -1,5 +1,4 @@
 import React from "react";
-import { TextArea } from "../components/TextArea";
 import { Jumbotron } from "../components/Jumbotron";
 
 export const Home = () => {

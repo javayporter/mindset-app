@@ -16,7 +16,8 @@
   display: block;
 }
 
-.mobile {
+.transparent {
+  opacity: 0.9;
 }
 
 /* Media Queries */
