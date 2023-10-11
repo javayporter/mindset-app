@@ -1,11 +1,37 @@
 .music-container {
   display: flex;
-  background-color: blue;
+  /* background-color: blue; */
+  padding-bottom: 20%;
+  padding-top: 10%;
 }
 .itunes-data {
   display: flex;
-  background-color: orange;
+  justify-content: space-between;
+  gap: 5px;
   flex-wrap: wrap;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.single-card {
+  width: 175px;
+  height: 325px;
+}
+
+.card-img {
+  width: 175px;
+  height: 125px;
+}
+
+.card-text {
+  font-size: 12px;
+  height: 44px;
+}
+.title-text {
+  font-size: 14px;
+  height: 40px;
+}
+.play-button {
+  /* padding-top: 3%; */
+  /* width: 50px; */
 }

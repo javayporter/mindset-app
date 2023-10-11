@@ -7,7 +7,6 @@ export const Home = () => {
     <div>
       <div className="">
         <HeroSection />
-        <JokeGenerator />
       </div>
     </div>
   );

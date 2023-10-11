@@ -27,7 +27,7 @@ export const Music = () => {
 
   return (
     <div>
-      <button onClick={() => returnHeight()}>get height</button>
+      {/* <button onClick={() => returnHeight()}>get height</button> */}
       <div className="music-container">
         {data.length > 0 ? (
           <div className="itunes-data">
