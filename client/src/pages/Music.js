@@ -32,7 +32,7 @@ export const Music = () => {
         {data.length > 0 ? (
           <div className="itunes-data">
             {data.map((item) => (
-              <MusicCard className="testing" info={item} key={item.trackId} />
+              <MusicCard info={item} key={item.trackId} />
             ))}
           </div>
         ) : (
