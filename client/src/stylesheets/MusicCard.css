@@ -1,1 +1,47 @@
+.music-container {
+  padding: 6%;
+}
+.music-search {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 10%;
+  background-image: linear-gradient(
+    to right,
+    rgba(140, 195, 203, 0.819),
+    rgb(83, 53, 111, 0.819)
+  );
+}
+.itunes-data {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
 
+.single-card {
+  display: flex;
+  width: 975px;
+  height: 90px;
+}
+
+.card-img {
+  width: 105px;
+  height: 90px;
+}
+
+.card-text {
+  font-size: 12px;
+  height: 4px;
+}
+.title-text {
+  font-size: 14px;
+  /* height: 40px; */
+}
+.play-button {
+  display: flex;
+  justify-content: right;
+}
+.card-container {
+  display: flex;
+}

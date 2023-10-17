@@ -1,3 +1,35 @@
-.navbar-cus {
-  margin-bottom: 15%;
+.hamburger {
+  display: none;
+}
+.close-svg {
+  display: none;
+}
+
+.nav-svgs {
+  display: none;
+}
+
+.no-display {
+  display: none;
+}
+.display {
+  display: block;
+}
+
+.transparent {
+  opacity: 0.9;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .nav-svgs {
+    display: block;
+    cursor: pointer;
+  }
+  .nav-links {
+    display: none;
+  }
 }

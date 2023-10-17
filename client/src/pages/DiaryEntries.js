@@ -1,6 +1,5 @@
 import Button from "react-bootstrap/Button";
 import { useEffect, useState } from "react";
-import axios from "axios";
 import { ModalCus } from "../components/Modal";
 import { Forms } from "../components/Forms";
 
@@ -10,7 +9,7 @@ export const DiaryEntries = () => {
   useEffect(() => {
     const fetchAllEntries = async () => {
       try {
-        const res = await axios.get("http://localhost:8800/entries");
+        const res = await fetch("http://localhost:8800/entries");
         console.log("response data: ", res.data);
         setEntries(res.data);
       } catch (err) {
