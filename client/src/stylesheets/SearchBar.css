@@ -1,5 +1,5 @@
 .search-bar {
-  width: 500px;
+  width: 250px;
   text-decoration: none;
 }
 input {
@@ -14,4 +14,13 @@ input {
   border-radius: 25px;
   width: 50%;
   background-color: white;
+}
+
+@media screen and (max-width: 540px) {
+  .search-bar {
+    width: 150px;
+  }
+  .search {
+    width: 65%;
+  }
 }
