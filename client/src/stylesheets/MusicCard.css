@@ -1,8 +1,5 @@
 .music-container {
-  /* display: flex;
-  justify-content: center; */
   padding: 6%;
-  /* padding-top: 5%; */
 }
 .music-search {
   display: flex;
@@ -17,32 +14,34 @@
 }
 .itunes-data {
   display: flex;
-  justify-content: space-between;
-  gap: 5px;
+  justify-content: center;
+  gap: 25px;
   flex-wrap: wrap;
-  margin-left: 20%;
-  margin-right: 20%;
 }
 
 .single-card {
-  width: 175px;
-  height: 325px;
+  display: flex;
+  width: 975px;
+  height: 90px;
 }
 
 .card-img {
-  width: 175px;
-  height: 125px;
+  width: 105px;
+  height: 90px;
 }
 
 .card-text {
   font-size: 12px;
-  height: 44px;
+  height: 4px;
 }
 .title-text {
   font-size: 14px;
-  height: 40px;
+  /* height: 40px; */
 }
 .play-button {
-  /* padding-top: 3%; */
-  /* width: 50px; */
+  display: flex;
+  justify-content: right;
+}
+.card-container {
+  display: flex;
 }
