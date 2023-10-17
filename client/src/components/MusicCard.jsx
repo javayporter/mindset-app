@@ -15,7 +15,7 @@ const MusicCard = ({ info }) => {
           className="card-img"
         />
         <Card.Body>
-          <Card.Title className="title-text">{`${musicData.artistName} - ${musicData.collectionName}`}</Card.Title>
+          <Card.Title className="title-text">{`${musicData.artistName}`}</Card.Title>
           <Card.Text className="card-text">
             {musicData.trackCensoredName}
           </Card.Text>

@@ -1,7 +1,19 @@
 .music-container {
+  /* display: flex;
+  justify-content: center; */
+  padding: 6%;
+  /* padding-top: 5%; */
+}
+.music-search {
   display: flex;
-  padding-bottom: 20%;
-  padding-top: 10%;
+  justify-content: center;
+  text-align: center;
+  padding: 10%;
+  background-image: linear-gradient(
+    to right,
+    rgba(140, 195, 203, 0.819),
+    rgb(83, 53, 111, 0.819)
+  );
 }
 .itunes-data {
   display: flex;

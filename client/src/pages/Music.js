@@ -1,6 +1,8 @@
 import { useState } from "react";
 import MusicCard from "../components/MusicCard";
 import "../stylesheets/MusicCard.css";
+import { SearchBar } from "../components/SearchBar";
+import { Button } from "react-bootstrap";
 
 export const Music = () => {
   const [data, setData] = useState([]);
@@ -23,11 +25,17 @@ export const Music = () => {
     console.log(`${navHeight}px`);
   };
 
-  getItunesData(buildUrl("beyonce"));
+  const runSearch = () => {
+    const searchBar = document.querySelector(".search-bar");
+    let searchTerm = searchBar.value;
+    getItunesData(buildUrl(searchTerm));
+  };
 
   return (
     <div>
-      {/* <button onClick={() => returnHeight()}>get height</button> */}
+      <div className="music-search">
+        <SearchBar searchFunc={() => runSearch()} />
+      </div>
       <div className="music-container">
         {data.length > 0 ? (
           <div className="itunes-data">
